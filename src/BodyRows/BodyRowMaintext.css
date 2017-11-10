@@ -1,0 +1,24 @@
+.bodyrow-maintext {
+  font-weight: bold;
+  font-size: 34px;
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lastrow {
+  padding-bottom: 64px;
+}
+
+.bodyrow-see_all {
+  font-family: "CircularAir";
+  font-size: 14px;
+  line-height: 43px;
+  display: flex;
+  align-items: center;
+}
+
+.see_all-arrow {
+  height: 10px;
+  margin-left: 8px;
+}

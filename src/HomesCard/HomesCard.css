@@ -1,0 +1,23 @@
+.homes-card-image {
+  height: 204px;
+}
+
+.homes-card-description {
+  font-family: "CircularAir-Bold";
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.homes-card-subtext {
+  font-family: "CircularAir-Light";
+  font-size: 15px;
+  line-height: 18px;
+}
+.homes-card-subtext {
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.card-stars {
+  margin-top: 6px;
+}

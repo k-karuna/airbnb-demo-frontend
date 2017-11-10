@@ -1,0 +1,45 @@
+.navbar {
+  border-bottom: 1px solid rgba(72, 72, 72, 0.3);
+  margin-top: 23px;
+}
+
+.navbar-item {
+  display: flex;
+  height: 80px;
+  align-items: center;
+}
+
+.navbar-input-text {
+  flex: 1;
+  height: 48px;
+  box-sizing: border-box;
+  outline-width: 0;
+  border: 0px;
+  color: #484848;
+  line-height: 24px;
+  font-size: 16px;
+  font-family: "CircularAir", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.navbar-input {
+  display: flex;
+  width: 100%;
+  border: 1px solid #dbdbdb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+}
+
+.image-logo {
+  height: 32px;
+}
+.input-search-img {
+  padding: 0 16px;
+}
+.navbar-right {
+  justify-content: flex-end;
+}
+.navbar-right-link {
+  margin: 0px 8px;
+  font-size: 16px;
+  line-height: 24px;
+}

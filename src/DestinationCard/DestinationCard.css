@@ -1,0 +1,9 @@
+.destination-card-image {
+  height: 220px;
+}
+
+.destination-city-text {
+  font-family: "CircularAir-Bold";
+  font-size: 15px;
+  line-height: 18px;
+}
