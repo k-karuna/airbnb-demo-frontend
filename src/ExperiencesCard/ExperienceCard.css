@@ -1,5 +1,11 @@
 .experience-card-image {
-  height: 347px;
+  height: 250px;
+}
+
+@media (min-width: 768px) {
+  .experience-card-image {
+    height: 346px;
+  }
 }
 
 .experience-card-price {
@@ -27,4 +33,9 @@
   font-family: "CircularAir";
   font-size: 12px;
   line-height: 14px;
+}
+
+.experience-cards {
+  display: flex;
+  overflow: hidden;
 }

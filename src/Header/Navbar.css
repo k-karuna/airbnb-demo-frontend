@@ -35,11 +35,20 @@
 .input-search-img {
   padding: 0 16px;
 }
-.navbar-right {
-  justify-content: flex-end;
-}
+
 .navbar-right-link {
   margin: 0px 8px;
   font-size: 16px;
   line-height: 24px;
+}
+
+.navbar-right {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-right {
+    display: flex;
+    justify-content: flex-end;
+  }
 }

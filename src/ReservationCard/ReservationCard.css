@@ -1,5 +1,11 @@
 .reservation-card-image {
-  height: 164px;
+  height: 108px;
+}
+
+@media (min-width: 576px) {
+  .reservation-card-image {
+    height: 164px;
+  }
 }
 
 .reservation-type {

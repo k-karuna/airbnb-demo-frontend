@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./BodyRow.css";
 
 import DestImg1 from "../DestinationCard/Rectangle6@2x-7.png";
 import DestImg2 from "../DestinationCard/Rectangle6@2x-8.png";
@@ -18,25 +17,27 @@ export default function() {
           <div className="col-12">
             <div className="bodyrow-maintext">Featured destinations</div>
           </div>
-          <div className="col-2">
-            <DestinationCard imgSrc={DestImg1} cityName="Paris" />
-          </div>
-          <div className="col-2">
-            <DestinationCard imgSrc={DestImg2} cityName="Miami" />
-          </div>
-          <div className="col-2">
-            <DestinationCard imgSrc={DestImg3} cityName="Tokyo" />
-          </div>
-          <div className="col-2">
-            <DestinationCard imgSrc={DestImg4} cityName="Cape town" />
-          </div>
-          <div className="col-2">
-            <DestinationCard imgSrc={DestImg5} cityName="Seoul" />
-          </div>
-          <div className="col-2">
-            <div className="cardContainer">
-              <DestinationCard imgSrc={DestImg6} cityName="Los Angeles" />
-              <div className="right-roud-button right-roud-button-destinations" />
+          <div className="experience-cards">
+            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+              <DestinationCard imgSrc={DestImg1} cityName="Paris" />
+            </div>
+            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+              <DestinationCard imgSrc={DestImg2} cityName="Miami" />
+            </div>
+            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+              <DestinationCard imgSrc={DestImg3} cityName="Tokyo" />
+            </div>
+            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+              <DestinationCard imgSrc={DestImg4} cityName="Cape town" />
+            </div>
+            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+              <DestinationCard imgSrc={DestImg5} cityName="Seoul" />
+            </div>
+            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+              <div className="cardContainer">
+                <DestinationCard imgSrc={DestImg6} cityName="Los Angeles" />
+                <div className="right-roud-button right-roud-button-destinations" />
+              </div>
             </div>
           </div>
         </div>

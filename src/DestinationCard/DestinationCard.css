@@ -1,5 +1,11 @@
 .destination-card-image {
-  height: 220px;
+  height: 138px;
+}
+
+@media (min-width: 576px) {
+  .destination-card-image {
+    height: 220px;
+  }
 }
 
 .destination-city-text {

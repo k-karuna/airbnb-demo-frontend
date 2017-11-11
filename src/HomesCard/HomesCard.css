@@ -1,5 +1,11 @@
 .homes-card-image {
-  height: 204px;
+  height: 156px;
+}
+
+@media (min-width: 576px) {
+  .homes-card-image {
+    height: 204px;
+  }
 }
 
 .homes-card-description {

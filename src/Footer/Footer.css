@@ -5,8 +5,19 @@
   background-color: #fff;
   background: #fff;
   height: 48px;
-  width: 100%;
+  min-width: 176px;
   margin-bottom: 16px;
+  display: inline-block;
+}
+
+.select-style.second-select {
+  float: right;
+}
+
+@media only screen and (min-width: 576px) {
+  .select-style.second-select {
+    float: none;
+  }
 }
 
 .select-style select {
@@ -20,13 +31,37 @@
   outline-width: 0;
   padding-left: 16px;
   font-family: "CircularAir-Light";
-  font-size: 18px;
+  font-size: 12px;
   color: #383838;
   background-image: url("select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right;
-  background-position-x: 198px;
+  background-position-x: calc(100% - 6px);
   background-position-y: 20px;
+}
+
+@media only screen and (min-width: 576px) {
+  .select-style.second-select {
+    float: none;
+  }
+
+  .select-style select {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .select-style.second-select {
+    float: none;
+  }
+
+  .select-style select {
+    font-size: 18px;
+  }
+
+  .select-style select {
+    width: 220px;
+  }
 }
 
 .footerrow {
@@ -53,9 +88,19 @@
   font-size: 15px;
   color: #636363;
   align-items: center;
-  justify-content: space-between;
 }
 
 .little-footer-row {
   border-top: 1px solid rgba(72, 72, 72, 0.3);
+}
+
+.footer-links-wrapper {
+  display: none;
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-links-wrapper {
+    justify-content: flex-end;
+    display: flex;
+  }
 }

@@ -16,39 +16,42 @@ export default function() {
           <div className="col-12">
             <BodyRowMaintext mainText="Popular reservations around the world" />
           </div>
-          <div className="col-3">
-            <ReservationCard
-              imgSrc={ReservImg1}
-              reservType="speakeasy"
-              reservName="Chumley's"
-              reservPrice="About $60 per person"
-            />
-          </div>
-          <div className="col-3">
-            <ReservationCard
-              imgSrc={ReservImg2}
-              reservType="korean gastropub"
-              reservName="Hanjan"
-              reservPrice="About $50 per person"
-            />
-          </div>
-          <div className="col-3">
-            <ReservationCard
-              imgSrc={ReservImg3}
-              reservType="german american"
-              reservName="Prime Meats"
-              reservPrice="About $55 per person"
-            />
-          </div>
-          <div className="col-3">
-            <div className="cardContainer">
+
+          <div className="experience-cards">
+            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
               <ReservationCard
-                imgSrc={ReservImg4}
-                reservType="fine seafood"
-                reservName="Seaprice"
-                reservPrice="About $70 per person"
+                imgSrc={ReservImg1}
+                reservType="speakeasy"
+                reservName="Chumley's"
+                reservPrice="About $60 per person"
               />
-              <div className="right-roud-button right-roud-button-reservations" />
+            </div>
+            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+              <ReservationCard
+                imgSrc={ReservImg2}
+                reservType="korean gastropub"
+                reservName="Hanjan"
+                reservPrice="About $50 per person"
+              />
+            </div>
+            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+              <ReservationCard
+                imgSrc={ReservImg3}
+                reservType="german american"
+                reservName="Prime Meats"
+                reservPrice="About $55 per person"
+              />
+            </div>
+            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+              <div className="cardContainer">
+                <ReservationCard
+                  imgSrc={ReservImg4}
+                  reservType="fine seafood"
+                  reservName="Seaprice"
+                  reservPrice="About $70 per person"
+                />
+                <div className="right-roud-button right-roud-button-reservations" />
+              </div>
             </div>
           </div>
         </div>

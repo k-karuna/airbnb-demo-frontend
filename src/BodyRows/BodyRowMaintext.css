@@ -1,21 +1,31 @@
 .bodyrow-maintext {
   font-weight: bold;
-  font-size: 34px;
+  font-size: 24px;
   margin-bottom: 24px;
   display: flex;
   justify-content: space-between;
 }
 
-.lastrow {
-  padding-bottom: 64px;
-}
-
 .bodyrow-see_all {
   font-family: "CircularAir";
-  font-size: 14px;
+  font-size: 12px;
   line-height: 43px;
   display: flex;
   align-items: center;
+}
+
+@media (min-width: 576px) {
+  .bodyrow-maintext {
+    font-size: 32px;
+  }
+
+  .bodyrow-see_all {
+    font-size: 14px;
+  }
+}
+
+.lastrow {
+  padding-bottom: 64px;
 }
 
 .see_all-arrow {

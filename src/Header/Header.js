@@ -9,12 +9,12 @@ export default function() {
       <nav className="navbar">
         <div className="container">
           <div className="row">
-            <div className="col-1">
+            <div className="col-md-1 col-sm-1 col-xs-1">
               <div className="navbar-item">
                 <img className="image-logo" src={Logo} alt="" />
               </div>
             </div>
-            <div className="col-5">
+            <div className="col-md-5 col-sm-7 col-xs-10 col-10">
               <div className="navbar-item">
                 <div className="navbar-input">
                   <img src={Search} alt="" className="input-search-img" />
@@ -26,7 +26,7 @@ export default function() {
                 </div>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-md-6 col-sm-4">
               <div className="navbar-item navbar-right">
                 <a className="navbar-right-link" href="/">
                   Become a host
