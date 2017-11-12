@@ -1,17 +1,11 @@
 import React, { Component } from "react";
-import styled from "styled-components";
-
-import "./Grid.css";
-import "./index.css";
-
-import Header from "./Header/Header";
-import ExploreAirbnb from "./BodyRows/ExploreAirbnb";
-import Experiences from "./BodyRows/Experiences";
-import Homes from "./BodyRows/Homes";
-import Reservations from "./BodyRows/Reservations";
-import Destinations from "./BodyRows/Destinations";
-import BigFooter from "./Footer/BigFooter";
-import Footer from "./Footer/Footer";
+import Header from "./Header";
+import ExploreAirbnb from "./ExploreAirbnb";
+import Experiences from "./Experiences";
+import Homes from "./Homes";
+import Reservations from "./Reservations";
+import Destinations from "./Destinations";
+import Footer from "./Footer";
 
 class App extends Component {
   render() {
@@ -23,7 +17,6 @@ class App extends Component {
         <Homes />
         <Reservations />
         <Destinations />
-        <BigFooter />
         <Footer />
       </div>
     );

@@ -6,6 +6,10 @@
   justify-content: space-between;
 }
 
+.bodyrow-main-lefttext {
+  max-width: 75%;
+}
+
 .bodyrow-see_all {
   font-family: "CircularAir";
   font-size: 12px;
@@ -31,4 +35,12 @@
 .see_all-arrow {
   height: 10px;
   margin-left: 8px;
+}
+
+.cardContainer {
+  position: relative;
+}
+
+.bodyrow {
+  margin-top: 48px;
 }

@@ -1,55 +1,61 @@
 import React, { Component } from "react";
-import ExperienceImg1 from "../ExperiencesCard/Rectangle@2x.png";
-import ExperienceImg2 from "../ExperiencesCard/Rectangle@2x-1.png";
-import ExperienceImg3 from "../ExperiencesCard/Rectangle@2x-2.png";
-import ExperienceImg4 from "../ExperiencesCard/Rectangle@2x-3.png";
+import experienceImg1 from "./ExperiencesCard/rectangle@2x.png";
+import experienceImg2 from "./ExperiencesCard/rectangle@2x-1.png";
+import experienceImg3 from "./ExperiencesCard/rectangle@2x-2.png";
+import experienceImg4 from "./ExperiencesCard/rectangle@2x-3.png";
+import Maintext from "./BodySection";
+import ExperiencesCard from "./ExperiencesCard";
+import { ScrollBtn, CardWrapper, BodySection } from "./Destinations";
+import styled from "styled-components";
 
-import BodyRowMaintext from "./BodyRowMaintext";
-import ExperiencesCard from "../ExperiencesCard/Card";
+export const ExperienceCards = styled.div`
+  display: flex;
+  overflow: hidden;
+`;
 
 export default function() {
   return (
-    <section className="bodyrow">
+    <BodySection>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <BodyRowMaintext mainText="Experiences" />
+            <Maintext mainText="Experiences" />
           </div>
-          <div className="experience-cards">
+          <ExperienceCards>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
               <ExperiencesCard
-                imgSrc={ExperienceImg1}
+                imgSrc={experienceImg1}
                 dollars="29"
                 description="Forest therapy"
               />
             </div>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
               <ExperiencesCard
-                imgSrc={ExperienceImg2}
+                imgSrc={experienceImg2}
                 dollars="69"
                 description="Whale watching"
               />
             </div>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
               <ExperiencesCard
-                imgSrc={ExperienceImg3}
+                imgSrc={experienceImg3}
                 dollars="69"
                 description="Table Mountain Summit, Cable Car Down"
               />
             </div>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
-              <div className="cardContainer">
+              <CardWrapper>
                 <ExperiencesCard
-                  imgSrc={ExperienceImg4}
+                  imgSrc={experienceImg4}
                   dollars="50"
                   description="Salsa Night"
                 />
-                <div className="right-roud-button" />
-              </div>
+                <ScrollBtn />
+              </CardWrapper>
             </div>
-          </div>
+          </ExperienceCards>
         </div>
       </div>
-    </section>
+    </BodySection>
   );
 }

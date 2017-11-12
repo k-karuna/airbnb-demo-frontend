@@ -1,24 +1,28 @@
 import React, { Component } from "react";
 
-import HomeImg1 from "../HomesCard/Rectangle6@2x.png";
-import HomeImg2 from "../HomesCard/Rectangle6@2x-1.png";
-import HomeImg3 from "../HomesCard/Rectangle6@2x-2.png";
+import homeImg1 from "./HomesCard/rectangle6@2x.png";
+import homeImg2 from "./HomesCard/rectangle6@2x-1.png";
+import homeImg3 from "./HomesCard/rectangle6@2x-2.png";
+import { ScrollBtn, CardWrapper } from "./Destinations";
+import HomesCard from "./HomesCard";
+import Maintext from "./BodySection";
+import { ExperienceCards } from "./Experiences";
+import { BodySection } from "./Destinations";
 
-import HomesCard from "../HomesCard/Card";
-import BodyRowMaintext from "./BodyRowMaintext";
+const HomesScrollButton = ScrollBtn.extend`top: 82px;`;
 
 export default function() {
   return (
-    <section className="bodyrow">
+    <BodySection>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <BodyRowMaintext mainText="Homes" />
+            <Maintext mainText="Homes" />
           </div>
-          <div className="experience-cards">
+          <ExperienceCards>
             <div className="col-md-4 col-sm-5 col-xs-8 col-8">
               <HomesCard
-                imgSrc={HomeImg1}
+                imgSrc={homeImg1}
                 cardText="Homes"
                 dollars="82"
                 description="La Salentina, see, nature & relax"
@@ -28,7 +32,7 @@ export default function() {
             </div>
             <div className="col-md-4 col-sm-5 col-xs-8 col-8">
               <HomesCard
-                imgSrc={HomeImg2}
+                imgSrc={homeImg2}
                 cardText="Experiences"
                 dollars="82"
                 description="Your private 3 bedr. riad and exclusive"
@@ -37,21 +41,21 @@ export default function() {
               />
             </div>
             <div className="col-md-4 col-sm-5 col-xs-8 col-8">
-              <div className="cardContainer">
+              <CardWrapper>
                 <HomesCard
-                  imgSrc={HomeImg3}
+                  imgSrc={homeImg3}
                   cardText="Restaurants"
                   dollars="200"
                   description="Dreamy Tropical Tree House"
                   subText="Entire treehouse &#183; 1 bed"
                   hostType="364 &#183; Superhost"
                 />
-                <div className="right-roud-button right-roud-button-homes" />
-              </div>
+                <HomesScrollButton />
+              </CardWrapper>
             </div>
-          </div>
+          </ExperienceCards>
         </div>
       </div>
-    </section>
+    </BodySection>
   );
 }

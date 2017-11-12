@@ -1,26 +1,30 @@
 import React, { Component } from "react";
 
-import ReservImg1 from "../ReservationCard/Rectangle6@2x-3.png";
-import ReservImg2 from "../ReservationCard/Rectangle6@2x-4.png";
-import ReservImg3 from "../ReservationCard/Rectangle6@2x-5.png";
-import ReservImg4 from "../ReservationCard/Rectangle6@2x-6.png";
+import reservImg1 from "./ReservationCard/rectangle6@2x-3.png";
+import reservImg2 from "./ReservationCard/rectangle6@2x-4.png";
+import reservImg3 from "./ReservationCard/rectangle6@2x-5.png";
+import reservImg4 from "./ReservationCard/rectangle6@2x-6.png";
+import { ScrollBtn, CardWrapper } from "./Destinations";
+import { ExperienceCards } from "./Experiences";
+import Maintext from "./BodySection";
+import ReservationCard from "./ReservationCard";
+import { BodySection } from "./Destinations";
 
-import BodyRowMaintext from "./BodyRowMaintext";
-import ReservationCard from "../ReservationCard/Card";
+const ReservationScrollBtn = ScrollBtn.extend`top: 63px;`;
 
 export default function() {
   return (
-    <section className="bodyrow">
+    <BodySection>
       <div className="container">
         <div className="row">
           <div className="col-12">
-            <BodyRowMaintext mainText="Popular reservations around the world" />
+            <Maintext mainText="Popular reservations around the world" />
           </div>
 
-          <div className="experience-cards">
+          <ExperienceCards>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
               <ReservationCard
-                imgSrc={ReservImg1}
+                imgSrc={reservImg1}
                 reservType="speakeasy"
                 reservName="Chumley's"
                 reservPrice="About $60 per person"
@@ -28,7 +32,7 @@ export default function() {
             </div>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
               <ReservationCard
-                imgSrc={ReservImg2}
+                imgSrc={reservImg2}
                 reservType="korean gastropub"
                 reservName="Hanjan"
                 reservPrice="About $50 per person"
@@ -36,26 +40,26 @@ export default function() {
             </div>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
               <ReservationCard
-                imgSrc={ReservImg3}
+                imgSrc={reservImg3}
                 reservType="german american"
                 reservName="Prime Meats"
                 reservPrice="About $55 per person"
               />
             </div>
             <div className="col-md-3 col-sm-4 col-xs-6 col-6">
-              <div className="cardContainer">
+              <CardWrapper>
                 <ReservationCard
-                  imgSrc={ReservImg4}
+                  imgSrc={reservImg4}
                   reservType="fine seafood"
                   reservName="Seaprice"
                   reservPrice="About $70 per person"
                 />
-                <div className="right-roud-button right-roud-button-reservations" />
-              </div>
+                <ReservationScrollBtn />
+              </CardWrapper>
             </div>
-          </div>
+          </ExperienceCards>
         </div>
       </div>
-    </section>
+    </BodySection>
   );
 }

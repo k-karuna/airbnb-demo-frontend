@@ -5,19 +5,14 @@
   background-color: #fff;
   background: #fff;
   height: 48px;
-  min-width: 176px;
+
   margin-bottom: 16px;
   display: inline-block;
+  width: 49%;
 }
 
 .select-style.second-select {
   float: right;
-}
-
-@media only screen and (min-width: 576px) {
-  .select-style.second-select {
-    float: none;
-  }
 }
 
 .select-style select {
@@ -40,32 +35,12 @@
   background-position-y: 20px;
 }
 
-@media only screen and (min-width: 576px) {
-  .select-style.second-select {
-    float: none;
-  }
-
-  .select-style select {
-    font-size: 15px;
-  }
+select::-ms-expand {
+  display: none;
 }
 
-@media only screen and (min-width: 992px) {
-  .select-style.second-select {
-    float: none;
-  }
-
-  .select-style select {
-    font-size: 18px;
-  }
-
-  .select-style select {
-    width: 220px;
-  }
-}
-
-.footerrow {
-  padding: 48px 0px;
+.footer {
+  padding-top: 48px;
   border-top: 1px solid rgba(72, 72, 72, 0.3);
 }
 
@@ -74,6 +49,7 @@
   font-size: 15px;
   margin-bottom: 8px;
   color: #636363;
+  display: block;
 }
 
 .footer-text.label {
@@ -82,15 +58,21 @@
 }
 
 .footer-item {
-  height: 88px;
+  height: 37px;
   display: flex;
   font-family: "CircularAir";
   font-size: 15px;
   color: #636363;
   align-items: center;
 }
+.footer-item.right-footer-item {
+  display: flex;
+  justify-content: flex-start;
+}
 
 .little-footer-row {
+  padding-top: 10px;
+  margin-top: 28px;
   border-top: 1px solid rgba(72, 72, 72, 0.3);
 }
 
@@ -98,9 +80,40 @@
   display: none;
 }
 
-@media only screen and (min-width: 992px) {
+.footer-links {
+  margin: 0px 5px;
+}
+
+@media only screen and (min-width: 576px) {
+  .select-style select {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .select-style {
+    width: 216px;
+  }
+
+  .select-style select {
+    font-size: 18px;
+  }
+
+  .select-style.second-select {
+    float: none;
+  }
+
+  .little-footer-row {
+    padding-bottom: 10px;
+  }
   .footer-links-wrapper {
     justify-content: flex-end;
     display: flex;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .footer-item.right-footer-item {
+    justify-content: flex-end;
   }
 }

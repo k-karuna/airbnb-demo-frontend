@@ -17,7 +17,7 @@
   border: 0px;
   color: #484848;
   line-height: 24px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "CircularAir", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -31,6 +31,12 @@
 
 .image-logo {
   height: 32px;
+}
+
+.image-logo-arrow {
+  height: 6px;
+  padding-bottom: 12px;
+  padding-left: 2px;
 }
 .input-search-img {
   padding: 0 16px;
@@ -50,5 +56,9 @@
   .navbar-right {
     display: flex;
     justify-content: flex-end;
+  }
+
+  .image-logo-arrow {
+    display: none;
   }
 }

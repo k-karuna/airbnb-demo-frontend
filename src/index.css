@@ -15,23 +15,8 @@
   src: url("./fonts/Circular_Air-Light.woff") format("woff"),
     url("./fonts/Circular_Air-Light.ttf") format("truetype");
 }
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "CircularAir", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
+
 a {
   color: #484848;
   text-decoration: none;
-}
-
-.bodyrow {
-  margin-top: 48px;
-}
-
-.cardContainer {
-  position: relative;
-}
-
-.no-overflow {
 }
