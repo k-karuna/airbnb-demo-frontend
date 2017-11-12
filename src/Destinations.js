@@ -6,7 +6,7 @@ import destImg3 from "./Destination/rectangle6@2x-9.png";
 import destImg4 from "./Destination/rectangle6@2x-10.png";
 import destImg5 from "./Destination/rectangle6@2x-11.png";
 import destImg6 from "./Destination/rectangle6@2x-12.png";
-import bottomArrow from "./CardData/shape-5.svg";
+import bottomArrow from "./BodySection/shape-5.svg";
 import DestinationCard from "./Destination";
 import styled from "styled-components";
 import { ExperienceCards } from "./Experiences";
