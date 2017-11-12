@@ -1,0 +1,28 @@
+.reservation-card-image {
+  height: 108px;
+}
+
+@media (min-width: 576px) {
+  .reservation-card-image {
+    height: 164px;
+  }
+}
+
+.reservation-type {
+  font-family: "CircularAir-Bold";
+  font-size: 10px;
+  line-height: 12px;
+  text-transform: uppercase;
+}
+.reservation-name {
+  font-family: "CircularAir-Bold";
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.reservation-price {
+  margin-top: 4px;
+  font-family: "CircularAir-Light";
+  font-size: 18px;
+  line-height: 21px;
+}

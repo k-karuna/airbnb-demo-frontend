@@ -1,5 +1,22 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+@font-face {
+  font-family: "CircularAir-Bold";
+  src: url("./fonts/Circular_Air-Bold.woff") format("woff"),
+    url("./fonts/Circular_Air-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularAir";
+  src: url("./fonts/Circular_Air-Book.woff") format("woff"),
+    url("./fonts/Circular_Air-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CircularAir-Light";
+  src: url("./fonts/Circular_Air-Light.woff") format("woff"),
+    url("./fonts/Circular_Air-Light.ttf") format("truetype");
+}
+
+a {
+  color: #484848;
+  text-decoration: none;
 }
