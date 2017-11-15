@@ -16,6 +16,9 @@ export const LogoLink = styled.a`position: absolute;`;
 export const ImageLogo = styled.img`height: 32px;`;
 
 export const ImageLogoArrow = styled.img`
+  @media only screen and (min-width: 992px) {
+    display: inline;
+  }
   height: 6px;
   padding-bottom: 12px;
   padding-left: 2px;
@@ -49,6 +52,7 @@ export const NavbarItemRight = NavbarItem.extend`
   @media only screen and (min-width: 992px) {
     display: flex;
     justify-content: flex-end;
+  }
 `;
 
 export const NavbarRightLink = styled.a`
