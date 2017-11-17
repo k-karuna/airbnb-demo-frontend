@@ -20,8 +20,10 @@ export const FilterButton = styled.button`
   padding: 7px 16px;
   border: 1px solid rgba(72, 72, 72, 0.2);
   border-radius: 4px;
-  background-color: inherit;
+  background-color: white;
   margin: 0 6px;
+  background-color: ${props => (props.active ? "#008489" : "white")};
+  color: ${props => (props.active ? "white" : "#383838")};
 `;
 
 export const MapButton = styled.button`

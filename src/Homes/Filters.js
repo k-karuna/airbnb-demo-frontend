@@ -1,5 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import MediaQuery from "react-responsive";
+import "react-dates/initialize";
+import closeIcon from "./close1.svg";
+import {
+  DateRangePicker,
+  SingleDatePicker,
+  DayPickerRangeController
+} from "react-dates";
+import "react-dates/lib/css/_datepicker.css";
+import "./react-dates-override.css";
 import { FilterButton } from "./styled";
 
 const Filters = styled.div`
@@ -18,12 +28,62 @@ const DesktopFilters = styled.div`
   }
 `;
 
+class DateButtonComponent extends React.Component {
+  state = {
+    isOpen: false
+  };
+
+  handleClick = () => {
+    this.state.isOpen
+      ? this.setState({ isOpen: false })
+      : this.setState({ isOpen: true });
+  };
+
+  onDateChange = () => {
+    return;
+  };
+
+  onFocusChange = () => {
+    return;
+  };
+
+  render() {
+    return (
+      <div>
+        <MediaQuery maxWidth="991px">
+          <SingleDatePicker
+            date={null}
+            orientation={"horizontal"}
+            numberOfMonths={1}
+            focused={this.state.isOpen}
+            onDateChange={this.onDateChange}
+            onFocusChange={this.onFocusChange}
+          />
+        </MediaQuery>
+        <MediaQuery minWidth="992px">
+          <SingleDatePicker
+            date={null}
+            orientation={"horizontal"}
+            numberOfMonths={2}
+            focused={this.state.isOpen}
+            onDateChange={this.onDateChange}
+            onFocusChange={this.onFocusChange}
+          />
+        </MediaQuery>
+        <FilterButton active={this.state.isOpen} onClick={this.handleClick}>
+          Dates
+        </FilterButton>
+      </div>
+    );
+  }
+}
+
 export default function() {
   return (
     <Filters>
       <div className="container">
         <div className="row">
-          <FilterButton>Dates</FilterButton>
+          <DateButtonComponent />
           <FilterButton>Guests</FilterButton>
           <DesktopFilters>
             <FilterButton>Room type</FilterButton>
