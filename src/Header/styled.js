@@ -1,7 +1,6 @@
 import styled from "styled-components";
-
 export const Navbar = styled.nav`
-  border-bottom: 1px solid rgba(72, 72, 72, 0.3);
+  border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
   position: fixed;
   width: 100%;
   background-color: white;
@@ -14,8 +13,10 @@ export const NavbarItem = styled.div`
   align-items: center;
 `;
 
-export const LogoLink = styled.a`position: absolute;`;
-
+export const Logo = styled.div`
+  position: absolute;
+  top: 25px;
+`;
 export const ImageLogo = styled.img`height: 32px;`;
 
 export const ImageLogoArrow = styled.img`

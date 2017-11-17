@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ExploreCard = styled.a`
+export const ExploreCard = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;

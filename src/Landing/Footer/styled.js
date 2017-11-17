@@ -3,11 +3,11 @@ import selectArrow from "./select-arrow.svg";
 
 export const Footer = styled.section`
   padding-top: 48px;
-  border-top: 1px solid rgba(72, 72, 72, 0.3);
+  border-top: 0.5px solid rgba(72, 72, 72, 0.3);
 `;
 
 export const SelectWrap = styled.div`
-  border: 1px solid rgba(72, 72, 72, 0.2);
+  border: 0.5px solid rgba(72, 72, 72, 0.3);
   border-radius: 4px;
   overflow: hidden;
   background-color: #fff;
@@ -48,7 +48,7 @@ export const FooterSelect = styled.select`
   background-image: url(${selectArrow});
   background-repeat: no-repeat;
   background-position: right;
-  background-position-x: calc(100% - 6px);
+  background-position-x: calc(100% - 12px);
   background-position-y: 20px;
   @media only screen and (min-width: 576px) {
     font-size: 15px;
@@ -63,14 +63,17 @@ export const FooterSelect = styled.select`
 export const Links = styled.div`
   display: none;
   @media only screen and (min-width: 768px) {
-    justify-content: flex-end;
+    justify-content: space-between;
     display: flex;
   }
 `;
 
 export const Link = styled.a`
+  font-size: 12px;
+  @media only screen and (min-width: 992px) {
+    font-size: 15px;
+  }
   font-family: "CircularAir";
-  font-size: 15px;
   margin-bottom: 8px;
   color: #636363;
   display: block;
@@ -79,19 +82,23 @@ export const Link = styled.a`
 export const MainLink = Link.extend`
   font-weight: bold;
   margin-bottom: 16px;
+  color: #383838;
+  font-family: "CircularAir-Bold";
 `;
 
 export const FooterSocialinksWrap = styled.section`
-  padding-top: 10px;
   margin-top: 28px;
-  border-top: 1px solid rgba(72, 72, 72, 0.3);
+
   @media only screen and (min-width: 768px) {
-    padding-bottom: 10px;
+    margin-top: 48px;
   }
 `;
 
 export const LinksContainer = styled.div`
-  height: 37px;
+  @media only screen and (min-width: 992px) {
+    padding: 32px 0;
+  }
+  padding: 16px 0;
   display: flex;
   font-family: "CircularAir";
   font-size: 15px;
@@ -107,4 +114,18 @@ export const RightLinksContainer = LinksContainer.extend`
   }
 `;
 
-export const SocialLink = styled.a`margin: 0px 5px;`;
+export const SocialLink = styled.a`
+  color: #636363;
+  margin-right: 16px;
+`;
+
+export const SocialLinkWrapper = styled.a`
+  margin-left: 14px;
+  display: flex;
+`;
+
+export const SocialLinkImg = styled.img`height: 24px;`;
+
+export const FooterBorder = styled.div`
+  border-top: 0.5px solid rgba(72, 72, 72, 0.3);
+`;

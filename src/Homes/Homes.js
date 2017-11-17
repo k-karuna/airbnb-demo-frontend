@@ -13,8 +13,8 @@ import styled from "styled-components";
 
 const GMapCenterCoord = { lat: 50.01038826014866, lng: -118.6525866875 };
 
-const HomesWrapper = styled.div`padding-top: 152px;`;
-const HomesCardWrapper = styled.div`margin: 20px 0;`;
+const HomesWrapper = styled.div`padding-top: 140px;`;
+const HomesCardWrapper = styled.div`margin: 21px 0;`;
 
 export default function() {
   return (

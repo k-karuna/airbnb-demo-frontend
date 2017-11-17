@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import exploreImg1 from "../ExploreCard/rectangle2@2x.png";
 import exploreImg2 from "../ExploreCard/rectangle2@2x-1.png";
 import exploreImg3 from "../ExploreCard/rectangle2@2x-2.png";
@@ -31,11 +32,9 @@ export default function() {
         <div className="row">
           <ExploreCards>
             <div className="col-md-4 col-sm-5 col-xs-6 col-6">
-              <ExploreCard
-                imgSrc={exploreImg1}
-                cardText="Homes"
-                href={"/homes"}
-              />
+              <Link to="/homes">
+                <ExploreCard imgSrc={exploreImg1} cardText="Homes" />
+              </Link>
             </div>
             <div className="col-md-4 col-sm-5 col-xs-6 col-6">
               <ExploreCard imgSrc={exploreImg2} cardText="Experiences" />

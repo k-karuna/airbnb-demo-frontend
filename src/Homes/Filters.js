@@ -7,13 +7,13 @@ const Filters = styled.div`
   position: fixed;
   width: 100%;
   padding: 12px 0;
-  border-bottom: 1px solid rgba(72, 72, 72, 0.3);
+  border-bottom: 0.5px solid rgba(72, 72, 72, 0.3);
   background-color: white;
 `;
 
 const DesktopFilters = styled.div`
   display: none;
-  @media (min-width: 991px) {
+  @media (min-width: 992px) {
     display: inline;
   }
 `;

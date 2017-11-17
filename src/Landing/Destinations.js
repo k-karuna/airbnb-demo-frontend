@@ -27,6 +27,8 @@ export const BodySection = styled.section`
   margin-bottom: 48px;
 `;
 
+const DestinationsSection = BodySection.extend`margin-bottom: 64px;`;
+
 export const CardWrapper = styled.div`position: relative;`;
 
 export const ScrollBtn = styled.div`
@@ -48,7 +50,7 @@ const DestinationScrollBtn = ScrollBtn.extend`top: 91px;`;
 
 export default function() {
   return (
-    <BodySection>
+    <DestinationsSection>
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -79,6 +81,6 @@ export default function() {
           </ExperienceCards>
         </div>
       </div>
-    </BodySection>
+    </DestinationsSection>
   );
 }
