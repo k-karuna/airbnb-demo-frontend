@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import RightArrow from "./shape-5.svg";
 import styled from "styled-components";
 

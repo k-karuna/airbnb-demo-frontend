@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import airbnbLogoFooter from "./shape-8.svg";
 import facebook from "./facebook-2.svg";

@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import experienceImg1 from "./ExperiencesCard/rectangle@2x.png";
-import experienceImg2 from "./ExperiencesCard/rectangle@2x-1.png";
-import experienceImg3 from "./ExperiencesCard/rectangle@2x-2.png";
-import experienceImg4 from "./ExperiencesCard/rectangle@2x-3.png";
-import Maintext from "./BodySection";
-import ExperiencesCard from "./ExperiencesCard";
+import React from "react";
+import experienceImg1 from "../ExperiencesCard/rectangle@2x.png";
+import experienceImg2 from "../ExperiencesCard/rectangle@2x-1.png";
+import experienceImg3 from "../ExperiencesCard/rectangle@2x-2.png";
+import experienceImg4 from "../ExperiencesCard/rectangle@2x-3.png";
+import Maintext from "../BodySection";
+import ExperiencesCard from "../ExperiencesCard";
 import { ScrollBtn, CardWrapper, BodySection } from "./Destinations";
 import styled from "styled-components";
 

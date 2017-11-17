@@ -1,11 +1,11 @@
-import React, { Component } from "react";
+import React from "react";
 
-import homeImg1 from "./HomesCard/rectangle6@2x.png";
-import homeImg2 from "./HomesCard/rectangle6@2x-1.png";
-import homeImg3 from "./HomesCard/rectangle6@2x-2.png";
+import homeImg1 from "../HomesCard/rectangle6@2x.png";
+import homeImg2 from "../HomesCard/rectangle6@2x-1.png";
+import homeImg3 from "../HomesCard/rectangle6@2x-2.png";
 import { ScrollBtn, CardWrapper } from "./Destinations";
-import HomesCard from "./HomesCard";
-import Maintext from "./BodySection";
+import HomesCard from "../HomesCard";
+import Maintext from "../BodySection";
 import { ExperienceCards } from "./Experiences";
 import { BodySection } from "./Destinations";
 

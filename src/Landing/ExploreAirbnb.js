@@ -1,10 +1,10 @@
-import React, { Component } from "react";
-import exploreImg1 from "./ExploreCard/rectangle2@2x.png";
-import exploreImg2 from "./ExploreCard/rectangle2@2x-1.png";
-import exploreImg3 from "./ExploreCard/rectangle2@2x-2.png";
-import ExploreCard from "./ExploreCard";
+import React from "react";
+import exploreImg1 from "../ExploreCard/rectangle2@2x.png";
+import exploreImg2 from "../ExploreCard/rectangle2@2x-1.png";
+import exploreImg3 from "../ExploreCard/rectangle2@2x-2.png";
+import ExploreCard from "../ExploreCard";
 import styled from "styled-components";
-import { SectionCaption } from "./BodySection";
+import { SectionCaption } from "../BodySection";
 import { BodySection } from "./Destinations";
 
 const ExploreCards = styled.div`
@@ -14,9 +14,14 @@ const ExploreCards = styled.div`
   overflow: hidden;
 `;
 
+const ExploreSection = BodySection.extend`
+  margin-top: 0;
+  padding-top 128px;
+`;
+
 export default function() {
   return (
-    <BodySection>
+    <ExploreSection>
       <div className="container">
         <div className="row">
           <div className="col-12">
@@ -26,7 +31,11 @@ export default function() {
         <div className="row">
           <ExploreCards>
             <div className="col-md-4 col-sm-5 col-xs-6 col-6">
-              <ExploreCard imgSrc={exploreImg1} cardText="Homes" />
+              <ExploreCard
+                imgSrc={exploreImg1}
+                cardText="Homes"
+                href={"/homes"}
+              />
             </div>
             <div className="col-md-4 col-sm-5 col-xs-6 col-6">
               <ExploreCard imgSrc={exploreImg2} cardText="Experiences" />
@@ -37,6 +46,6 @@ export default function() {
           </ExploreCards>
         </div>
       </div>
-    </BodySection>
+    </ExploreSection>
   );
 }

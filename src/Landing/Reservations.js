@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-import reservImg1 from "./ReservationCard/rectangle6@2x-3.png";
-import reservImg2 from "./ReservationCard/rectangle6@2x-4.png";
-import reservImg3 from "./ReservationCard/rectangle6@2x-5.png";
-import reservImg4 from "./ReservationCard/rectangle6@2x-6.png";
+import reservImg1 from "../ReservationCard/rectangle6@2x-3.png";
+import reservImg2 from "../ReservationCard/rectangle6@2x-4.png";
+import reservImg3 from "../ReservationCard/rectangle6@2x-5.png";
+import reservImg4 from "../ReservationCard/rectangle6@2x-6.png";
 import { ScrollBtn, CardWrapper } from "./Destinations";
 import { ExperienceCards } from "./Experiences";
-import Maintext from "./BodySection";
-import ReservationCard from "./ReservationCard";
+import Maintext from "../BodySection";
+import ReservationCard from "../ReservationCard";
 import { BodySection } from "./Destinations";
 
 const ReservationScrollBtn = ScrollBtn.extend`top: 63px;`;
