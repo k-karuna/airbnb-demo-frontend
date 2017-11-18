@@ -103,7 +103,7 @@ export default function() {
               center={GMapCenterCoord}
               zoom={8}
               bootstrapURLKeys={{
-                key: process.env.REACT_APP_GMAP_KEY, //AIzaSyArFuzaI_Gf3nMYva4TtYsZhkBFYB0RnTI
+                key: process.env.REACT_APP_GMAP_KEY,
                 language: "ru"
               }}
             />
