@@ -16,36 +16,36 @@ export default function() {
     <BodySection>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-xs-12">
             <Maintext mainText="Homes" />
           </div>
           <ExperienceCards>
-            <div className="col-md-4 col-sm-5 col-xs-8 col-8">
+            <div className="col-xs-8 col-md-5 col-lg-4">
               <HomesCard
                 imgSrc={homeImg1}
                 cardText="Homes"
-                dollars="82"
+                price={82}
                 description="La Salentina, see, nature & relax"
                 subText="Entire house &#183; 9 beds"
                 hostType="97 &#183; Superhost"
               />
             </div>
-            <div className="col-md-4 col-sm-5 col-xs-8 col-8">
+            <div className="col-xs-8 col-md-5 col-lg-48">
               <HomesCard
                 imgSrc={homeImg2}
                 cardText="Experiences"
-                dollars="82"
+                price={90}
                 description="Your private 3 bedr. riad and exclusive"
                 subText="Entire house &#183; 5 beds"
                 hostType="161 &#183; Superhost"
               />
             </div>
-            <div className="col-md-4 col-sm-5 col-xs-8 col-8">
+            <div className="col-xs-8 col-md-5 col-lg-4">
               <CardWrapper>
                 <HomesCard
                   imgSrc={homeImg3}
                   cardText="Restaurants"
-                  dollars="200"
+                  price={200}
                   description="Dreamy Tropical Tree House"
                   subText="Entire treehouse &#183; 1 bed"
                   hostType="364 &#183; Superhost"

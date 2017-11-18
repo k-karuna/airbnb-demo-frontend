@@ -25,21 +25,21 @@ export default function() {
     <ExploreSection>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-xs-12">
             <SectionCaption>Explore Airbnb</SectionCaption>
           </div>
         </div>
         <div className="row">
           <ExploreCards>
-            <div className="col-md-4 col-sm-5 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-5 col-lg-4">
               <Link to="/homes">
                 <ExploreCard imgSrc={exploreImg1} cardText="Homes" />
               </Link>
             </div>
-            <div className="col-md-4 col-sm-5 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-5 col-lg-4">
               <ExploreCard imgSrc={exploreImg2} cardText="Experiences" />
             </div>
-            <div className="col-md-4 col-sm-5 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-5 col-lg-4">
               <ExploreCard imgSrc={exploreImg3} cardText="Restaurants" />
             </div>
           </ExploreCards>

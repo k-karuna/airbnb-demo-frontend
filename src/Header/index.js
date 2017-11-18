@@ -7,7 +7,6 @@ import logoArrow from "./arrow.png";
 import {
   Navbar,
   NavbarItem,
-  Logo,
   ImageLogo,
   ImageLogoArrow,
   NavbarInput,
@@ -23,17 +22,15 @@ export default function() {
       <Navbar>
         <div className="container">
           <div className="row">
-            <div className="col-md-1 col-sm-1 col-xs-2 col-2">
+            <div className="col-xs-2 col-md-1 col-lg-1 ">
               <NavbarItem>
                 <Link to="/">
-                  <Logo>
-                    <ImageLogo src={logoImg} alt="Airbnb" />
-                    <ImageLogoArrow src={logoArrow} />
-                  </Logo>
+                  <ImageLogo src={logoImg} alt="Airbnb" />
+                  <ImageLogoArrow src={logoArrow} />
                 </Link>
               </NavbarItem>
             </div>
-            <div className="col-md-5 col-sm-7 col-xs-10 col-10">
+            <div className="col-xs-10 col-md-7 col-lg-5">
               <NavbarItem>
                 <NavbarInput>
                   <InputSearchImg src={searchIco} />
@@ -41,7 +38,7 @@ export default function() {
                 </NavbarInput>
               </NavbarItem>
             </div>
-            <div className="col-md-6 col-sm-4">
+            <div className="col-md-4 col-lg-6">
               <NavbarItemRight>
                 <NavbarRightLink href="/">Become a host</NavbarRightLink>
                 <NavbarRightLink href="/">Help</NavbarRightLink>

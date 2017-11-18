@@ -18,7 +18,7 @@ export default function(props) {
         <ExperienceCardImage src={props.imgSrc} />
       </a>
       <CardBottomText>
-        <CardPrice>{props.dollars}$</CardPrice>
+        <CardPrice>{props.price}$</CardPrice>
         <ExperienceCardDescription>
           {props.description}
         </ExperienceCardDescription>

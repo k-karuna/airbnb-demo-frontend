@@ -17,12 +17,12 @@ export default function() {
     <BodySection>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-xs-12">
             <Maintext mainText="Popular reservations around the world" />
           </div>
 
           <ExperienceCards>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <ReservationCard
                 imgSrc={reservImg1}
                 reservType="speakeasy"
@@ -30,7 +30,7 @@ export default function() {
                 reservPrice="About $60 per person"
               />
             </div>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <ReservationCard
                 imgSrc={reservImg2}
                 reservType="korean gastropub"
@@ -38,7 +38,7 @@ export default function() {
                 reservPrice="About $50 per person"
               />
             </div>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <ReservationCard
                 imgSrc={reservImg3}
                 reservType="german american"
@@ -46,7 +46,7 @@ export default function() {
                 reservPrice="About $55 per person"
               />
             </div>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <CardWrapper>
                 <ReservationCard
                   imgSrc={reservImg4}

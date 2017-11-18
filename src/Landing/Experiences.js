@@ -18,36 +18,36 @@ export default function() {
     <BodySection>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-xs-12">
             <Maintext mainText="Experiences" />
           </div>
           <ExperienceCards>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <ExperiencesCard
                 imgSrc={experienceImg1}
-                dollars="29"
+                price={29}
                 description="Forest therapy"
               />
             </div>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <ExperiencesCard
                 imgSrc={experienceImg2}
-                dollars="69"
+                price={69}
                 description="Whale watching"
               />
             </div>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <ExperiencesCard
                 imgSrc={experienceImg3}
-                dollars="69"
+                price={69}
                 description="Table Mountain Summit, Cable Car Down"
               />
             </div>
-            <div className="col-md-3 col-sm-4 col-xs-6 col-6">
+            <div className="col-xs-6 col-md-4 col-lg-3">
               <CardWrapper>
                 <ExperiencesCard
                   imgSrc={experienceImg4}
-                  dollars="50"
+                  price={50}
                   description="Salsa Night"
                 />
                 <ScrollBtn />

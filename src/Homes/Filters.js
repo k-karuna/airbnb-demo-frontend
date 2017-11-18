@@ -2,12 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import MediaQuery from "react-responsive";
 import "react-dates/initialize";
-import closeIcon from "./close1.svg";
-import {
-  DateRangePicker,
-  SingleDatePicker,
-  DayPickerRangeController
-} from "react-dates";
+import { SingleDatePicker } from "react-dates";
 import "react-dates/lib/css/_datepicker.css";
 import "./react-dates-override.css";
 import { FilterButton } from "./styled";
@@ -34,18 +29,12 @@ class DateButtonComponent extends React.Component {
   };
 
   handleClick = () => {
-    this.state.isOpen
-      ? this.setState({ isOpen: false })
-      : this.setState({ isOpen: true });
+    this.setState({ isOpen: !this.state.isOpen });
   };
 
-  onDateChange = () => {
-    return;
-  };
+  onDateChange = () => {};
 
-  onFocusChange = () => {
-    return;
-  };
+  onFocusChange = () => {};
 
   render() {
     return (
@@ -55,6 +44,7 @@ class DateButtonComponent extends React.Component {
             date={null}
             orientation={"horizontal"}
             numberOfMonths={1}
+            hideKeyboardShortcutsPanel
             focused={this.state.isOpen}
             onDateChange={this.onDateChange}
             onFocusChange={this.onFocusChange}
@@ -65,6 +55,7 @@ class DateButtonComponent extends React.Component {
             date={null}
             orientation={"horizontal"}
             numberOfMonths={2}
+            hideKeyboardShortcutsPanel
             focused={this.state.isOpen}
             onDateChange={this.onDateChange}
             onFocusChange={this.onFocusChange}

@@ -53,26 +53,26 @@ export default function() {
     <DestinationsSection>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-xs-12">
             <MainText>Featured destinations</MainText>
           </div>
           <ExperienceCards>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg1} cityName="Paris" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg2} cityName="Miami" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg3} cityName="Tokyo" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg4} cityName="Cape town" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg5} cityName="Seoul" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <CardWrapper>
                 <DestinationCard imgSrc={destImg6} cityName="Los Angeles" />
                 <DestinationScrollBtn />

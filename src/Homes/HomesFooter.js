@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import rigthArrowImg from "./rightArrow.svg";
 
-const Footer = styled.div`padding: 24px 0;`;
+const Wrapper = styled.div`padding: 24px 0;`;
 const PaginationWrapper = styled.div`margin-bottom: 40px;`;
 const PaginationButtons = styled.div`
   display: flex;
@@ -43,7 +43,7 @@ const RentalsText = styled.p`
   text-align: center;
 `;
 
-const FooterText = RentalsText.extend`
+const AdditionalText = RentalsText.extend`
   margin: 0;
   color: #636363;
 `;
@@ -51,8 +51,8 @@ const FooterText = RentalsText.extend`
 export default function() {
   return (
     <div className="row">
-      <div className="col-12">
-        <Footer>
+      <div className="col-xs-12">
+        <Wrapper>
           <PaginationWrapper>
             <PaginationButtons>
               <LeftPaginationLink href="#">1</LeftPaginationLink>
@@ -66,11 +66,11 @@ export default function() {
             </PaginationButtons>
             <RentalsText>1 – 18 of 300+ Rentals</RentalsText>
           </PaginationWrapper>
-          <FooterText>
+          <AdditionalText>
             Enter dates to see full pricing. Additional fees apply. Taxes may be
             added.
-          </FooterText>
-        </Footer>
+          </AdditionalText>
+        </Wrapper>
       </div>
     </div>
   );

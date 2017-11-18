@@ -3,14 +3,14 @@ import mapImg from "./mapShape.png";
 
 export const GoogleMapContainer = styled.div`
   display: none;
-  @media (min-width: 991px) {
-    display: block;
-  }
   position: fixed;
   top: 140px;
   bottom: 0;
   right: 0;
   left: calc(50% + 170px);
+  @media (min-width: 992px) {
+    display: block;
+  }
 `;
 
 export const FilterButton = styled.button`
@@ -28,9 +28,6 @@ export const FilterButton = styled.button`
 
 export const MapButton = styled.button`
   display: block;
-  @media (min-width: 991px) {
-    display: none;
-  }
   position: fixed;
   right: 8px;
   bottom: 24px;
@@ -44,4 +41,7 @@ export const MapButton = styled.button`
   background-size: 15px 19px;
   background-repeat: no-repeat;
   background-position: center;
+  @media (min-width: 992px) {
+    display: none;
+  }
 `;
