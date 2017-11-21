@@ -27,7 +27,3 @@ a {
   color: #484848;
   text-decoration: none;
 }
-
-button:focus {
-  outline: 0;
-}
