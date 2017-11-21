@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 import airbnbLogoFooter from "./shape-8.svg";
 import facebook from "./facebook-2.svg";
@@ -16,7 +16,10 @@ import {
   FooterSocialinksWrap,
   LinksContainer,
   SocialLink,
-  RightLinksContainer
+  SocialLinkImg,
+  SocialLinkWrapper,
+  RightLinksContainer,
+  FooterBorder
 } from "./styled";
 
 export default function() {
@@ -24,7 +27,7 @@ export default function() {
     <Footer>
       <div className="container">
         <div className="row">
-          <div className="col-md-3 col-sm-3 col-xs-12 col-12">
+          <div className="col-xs-12 col-md-3">
             <SelectWrap>
               <FooterSelect>
                 <option>English</option>
@@ -38,10 +41,10 @@ export default function() {
               </FooterSelect>
             </RightSelectWrap>
           </div>
-          <div className="col-offset-0" />
-          <div className="col-md-8 col-8 col-sm-7">
+          <div className="col-offset-1" />
+          <div className="col-xs-8 col-md-7 col-lg-8">
             <Links>
-              <div className="col-md-2">
+              <div className="col-md-4">
                 <MainLink href="/">Airbnb</MainLink>
                 <Link href="/">About us</Link>
                 <Link href="/">Careers</Link>
@@ -50,8 +53,8 @@ export default function() {
                 <Link href="/">Help</Link>
                 <Link href="/">Diversity & Belonging</Link>
               </div>
-              <div className="col-md-1" />
-              <div className="col-md-2">
+              {/* <div className="col-offset-1" /> */}
+              <div className="col-md-3">
                 <MainLink href="/">Discover</MainLink>
                 <Link href="/">Trust & Safety</Link>
                 <Link href="/">Travel Credit</Link>
@@ -61,8 +64,8 @@ export default function() {
                 <Link href="/">Guidebooks</Link>
                 <Link href="/">Airbnbmag</Link>
               </div>
-              <div className="col-offset-1" />
-              <div className="col-md-2">
+              {/* <div className="col-offset-1" /> */}
+              <div className="col-md-3">
                 <MainLink href="/">Hosting</MainLink>
                 <Link href="/">Why Host</Link>
                 <Link href="/">Hospitality</Link>
@@ -75,33 +78,36 @@ export default function() {
       </div>
       <FooterSocialinksWrap>
         <div className="container">
-          <div className="row">
-            <div className="col-md-2 col-sm-3 col-12">
-              <LinksContainer>
-                <SocialLink href="/">
-                  <img src={airbnbLogoFooter} alt="" />
-                </SocialLink>
-                <SocialLink> &copy; Airbnb Inc.</SocialLink>
-              </LinksContainer>
+          <FooterBorder>
+            <div className="row">
+              <div className="col-xs-12 col-md-3 col-lg-2">
+                <LinksContainer>
+                  <SocialLink href="/">
+                    <img src={airbnbLogoFooter} alt="" />
+                  </SocialLink>
+                  <SocialLink> &copy; Airbnb Inc.</SocialLink>
+                </LinksContainer>
+              </div>
+              <div className="col-offset-6 col-offset-4" />
+              <div className="col-xs-12 col-md-5 col-lg-4">
+                <RightLinksContainer>
+                  <SocialLink href="/">Terms</SocialLink>
+                  <SocialLink href="/">Privacy</SocialLink>
+                  <SocialLink href="/">Site map</SocialLink>
+
+                  <SocialLinkWrapper href="http://facebook.com">
+                    <SocialLinkImg src={facebook} alt="" />
+                  </SocialLinkWrapper>
+                  <SocialLinkWrapper href="http://twitter.com">
+                    <SocialLinkImg src={twitter} alt="" />
+                  </SocialLinkWrapper>
+                  <SocialLinkWrapper href="http://instagram.com">
+                    <SocialLinkImg src={instagram} alt="" />
+                  </SocialLinkWrapper>
+                </RightLinksContainer>
+              </div>
             </div>
-            <div className="col-offset-6 col-offset-4" />
-            <div className="col-md-4 col-sm-5 col-12">
-              <RightLinksContainer>
-                <SocialLink href="/">Terms</SocialLink>
-                <SocialLink href="/">Privacy</SocialLink>
-                <SocialLink href="/">Site map</SocialLink>
-                <SocialLink href="http://facebook.com">
-                  <img src={facebook} alt="" />
-                </SocialLink>
-                <SocialLink href="http://twitter.com">
-                  <img src={twitter} alt="" />
-                </SocialLink>
-                <SocialLink href="http://instagram.com">
-                  <img src={instagram} alt="" />
-                </SocialLink>
-              </RightLinksContainer>
-            </div>
-          </div>
+          </FooterBorder>
         </div>
       </FooterSocialinksWrap>
     </Footer>

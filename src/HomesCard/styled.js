@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
 export const HomesCardImage = styled.img`
-  height: 156px;
+  width: 100%;
+  min-width: 310px;
   @media (min-width: 576px) {
-    height: 204px;
   }
 `;
 

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import RightArrow from "./shape-5.svg";
 import styled from "styled-components";
 
@@ -18,7 +18,8 @@ const Text = styled.span`max-width: 75%;`;
 const SeeAllLink = styled.a`
   font-family: "CircularAir";
   font-size: 12px;
-  line-height: 43px;
+  font-weight: normal;
+  line-height: 24px;
   display: flex;
   align-items: center;
   @media (min-width: 576px) {

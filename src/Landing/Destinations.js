@@ -1,13 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-import destImg1 from "./Destination/rectangle6@2x-7.png";
-import destImg2 from "./Destination/rectangle6@2x-8.png";
-import destImg3 from "./Destination/rectangle6@2x-9.png";
-import destImg4 from "./Destination/rectangle6@2x-10.png";
-import destImg5 from "./Destination/rectangle6@2x-11.png";
-import destImg6 from "./Destination/rectangle6@2x-12.png";
-import bottomArrow from "./BodySection/shape-5.svg";
-import DestinationCard from "./Destination";
+import destImg1 from "../Destination/rectangle6@2x-7.png";
+import destImg2 from "../Destination/rectangle6@2x-8.png";
+import destImg3 from "../Destination/rectangle6@2x-9.png";
+import destImg4 from "../Destination/rectangle6@2x-10.png";
+import destImg5 from "../Destination/rectangle6@2x-11.png";
+import destImg6 from "../Destination/rectangle6@2x-12.png";
+import bottomArrow from "../BodySection/shape-5.svg";
+import DestinationCard from "../Destination";
 import styled from "styled-components";
 import { ExperienceCards } from "./Experiences";
 
@@ -26,6 +26,8 @@ export const BodySection = styled.section`
   margin-top: 48px;
   margin-bottom: 48px;
 `;
+
+const DestinationsSection = BodySection.extend`margin-bottom: 64px;`;
 
 export const CardWrapper = styled.div`position: relative;`;
 
@@ -48,29 +50,29 @@ const DestinationScrollBtn = ScrollBtn.extend`top: 91px;`;
 
 export default function() {
   return (
-    <BodySection>
+    <DestinationsSection>
       <div className="container">
         <div className="row">
-          <div className="col-12">
+          <div className="col-xs-12">
             <MainText>Featured destinations</MainText>
           </div>
           <ExperienceCards>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg1} cityName="Paris" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg2} cityName="Miami" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg3} cityName="Tokyo" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg4} cityName="Cape town" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <DestinationCard imgSrc={destImg5} cityName="Seoul" />
             </div>
-            <div className="col-md-2 col-sm-3 col-xs-4 col-4">
+            <div className="col-xs-4 col-md-3 col-lg-2">
               <CardWrapper>
                 <DestinationCard imgSrc={destImg6} cityName="Los Angeles" />
                 <DestinationScrollBtn />
@@ -79,6 +81,6 @@ export default function() {
           </ExperienceCards>
         </div>
       </div>
-    </BodySection>
+    </DestinationsSection>
   );
 }

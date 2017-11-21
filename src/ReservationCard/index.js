@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import shapeStar from "../BodySection/shapeStar.png";
+import React from "react";
 import { CardBottomText } from "../ExperiencesCard/styled";
 import {
   ReservationCardImage,

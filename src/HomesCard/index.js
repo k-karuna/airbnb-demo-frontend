@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import shapeStar from "../BodySection/shapeStar.png";
 
 import {
@@ -22,7 +22,7 @@ export default function(props) {
         <HomesCardImage src={props.imgSrc} />
       </a>
       <CardBottomText>
-        <CardPrice>{props.dollars}$</CardPrice>
+        <CardPrice>{props.price}$</CardPrice>
         <HomesCardDescription>{props.description}</HomesCardDescription>
         <HomesCardSubtext>{props.subText}</HomesCardSubtext>
         <CardStars>
