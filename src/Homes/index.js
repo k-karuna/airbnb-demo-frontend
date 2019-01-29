@@ -1,14 +1,14 @@
-import React from "react";
-import Homes from "./Homes";
-import Header from "../Header";
-import Filters from "./Filters";
+import React from 'react';
+import { Route } from 'react-router-dom';
 
-export default function() {
+import List from './List';
+import Show from './Show';
+
+export default function () {
   return (
     <div>
-      <Header />
-      <Filters />
-      <Homes />
+      <Route exact path="/homes" component={List} />
+      <Route exact path="/homes/:id" component={Show} />
     </div>
   );
 }

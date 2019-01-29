@@ -1,9 +1,16 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-import "./grid.css";
-import App from "./App";
-import registerServiceWorker from "./registerServiceWorker";
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+import 'normalize.css';
+import 'react-dates/initialize';
+import 'react-dates/lib/css/_datepicker.css';
+
+import './fonts/fonts.css';
+import './index.css';
+import './UI/react_dates_overrides.css';
+
+import App from './App';
+import registerServiceWorker from './registerServiceWorker';
+
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
