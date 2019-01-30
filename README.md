@@ -1,5 +1,11 @@
 # airbnb-demo-frontend
 
+A demo project build with:
+
+- react
+- react-router
+- styled-components
+
 Based on React and
 [create-react-app](https://github.com/facebookincubator/create-react-app).
 
